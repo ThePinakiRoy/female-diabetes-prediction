@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
+    page_title="Female Diabetes Prediction",
     page_icon="🧊")
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
