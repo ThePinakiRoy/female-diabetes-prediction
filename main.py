@@ -2,14 +2,14 @@ import streamlit as st
 import pickle
 import numpy as np
 
-
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊")
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 st.title("Female Diabetes Prediction")
-st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
-    page_icon="🧊")
+
 
 col1, col2, col3 = st.columns(3)
 with col1:
